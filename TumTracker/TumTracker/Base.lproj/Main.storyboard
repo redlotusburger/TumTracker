@@ -68,6 +68,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="3Bv-M7-neg" id="K3d-Qt-9yH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lS-Dp-Hxq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

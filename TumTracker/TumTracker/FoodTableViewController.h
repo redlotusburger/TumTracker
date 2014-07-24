@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "FoodTableViewCell.h"
+#import "GAI.h"
 
-
-@interface FoodTableViewController : UITableViewController
+@interface FoodTableViewController : GAITrackedViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *foodList;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)trackIt:(id)sender;
+
+
+
 @end

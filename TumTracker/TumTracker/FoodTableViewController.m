@@ -9,6 +9,7 @@
 #import "FoodTableViewController.h"
 #import "FoodTableViewCell.h"
 
+
 @interface FoodTableViewController ()
 
 @end
@@ -20,19 +21,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
     // data source
     self.foodList = @[@"100g Pears", @"3 big Potatoes", @"Some Oats"];
 
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Food Screen";
+}
 
 
 - (IBAction)trackIt:(id)sender {
     NSIndexPath *currentRow = [self.tableView indexPathForSelectedRow];
     NSString *currentFood = [self.foodList objectAtIndex:[currentRow row]];
     
-     NSLog(@"Track %@", currentFood);
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+     NSLog(@"Track %@ with tracker %@", currentFood, tracker);
 }
 
 

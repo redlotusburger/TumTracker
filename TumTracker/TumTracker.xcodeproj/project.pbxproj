@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2A6EEE919811BCF00179341 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6EEE819811BCF00179341 /* CoreData.framework */; };
+		F2A6EEEB19811BEF00179341 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6EEEA19811BEF00179341 /* AdSupport.framework */; };
+		F2A6EEED19811C0900179341 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6EEEC19811C0900179341 /* SystemConfiguration.framework */; };
+		F2A6EEEF19811C1600179341 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6EEEE19811C1600179341 /* libz.dylib */; };
+		F2A6EEF119811CC500179341 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A6EEF019811CC500179341 /* libGoogleAnalyticsServices.a */; };
 		F2CD3152197FE43000873283 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD3151197FE43000873283 /* Foundation.framework */; };
 		F2CD3154197FE43000873283 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD3153197FE43000873283 /* CoreGraphics.framework */; };
 		F2CD3156197FE43000873283 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD3155197FE43000873283 /* UIKit.framework */; };
@@ -36,6 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2A6EEDE19811B8B00179341 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		F2A6EEDF19811B8B00179341 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		F2A6EEE019811B8B00179341 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		F2A6EEE119811B8B00179341 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		F2A6EEE219811B8B00179341 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		F2A6EEE319811B8B00179341 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		F2A6EEE419811B8B00179341 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		F2A6EEE519811B8B00179341 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		F2A6EEE619811B8B00179341 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		F2A6EEE719811B8B00179341 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		F2A6EEE819811BCF00179341 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F2A6EEEA19811BEF00179341 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F2A6EEEC19811C0900179341 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F2A6EEEE19811C1600179341 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F2A6EEF019811CC500179341 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		F2CD314E197FE43000873283 /* TumTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CD3151197FE43000873283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2CD3153197FE43000873283 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +86,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A6EEEF19811C1600179341 /* libz.dylib in Frameworks */,
+				F2A6EEED19811C0900179341 /* SystemConfiguration.framework in Frameworks */,
+				F2A6EEEB19811BEF00179341 /* AdSupport.framework in Frameworks */,
+				F2A6EEF119811CC500179341 /* libGoogleAnalyticsServices.a in Frameworks */,
+				F2A6EEE919811BCF00179341 /* CoreData.framework in Frameworks */,
 				F2CD3154197FE43000873283 /* CoreGraphics.framework in Frameworks */,
 				F2CD3156197FE43000873283 /* UIKit.framework in Frameworks */,
 				F2CD3152197FE43000873283 /* Foundation.framework in Frameworks */,
@@ -85,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2A6EEDD19811B4700179341 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F2A6EEDE19811B8B00179341 /* GAI.h */,
+				F2A6EEDF19811B8B00179341 /* GAIDictionaryBuilder.h */,
+				F2A6EEE019811B8B00179341 /* GAIEcommerceFields.h */,
+				F2A6EEE119811B8B00179341 /* GAIEcommerceProduct.h */,
+				F2A6EEE219811B8B00179341 /* GAIEcommerceProductAction.h */,
+				F2A6EEE319811B8B00179341 /* GAIEcommercePromotion.h */,
+				F2A6EEE419811B8B00179341 /* GAIFields.h */,
+				F2A6EEE519811B8B00179341 /* GAILogger.h */,
+				F2A6EEE619811B8B00179341 /* GAITrackedViewController.h */,
+				F2A6EEE719811B8B00179341 /* GAITracker.h */,
+			);
+			name = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
 		F2CD3145197FE43000873283 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +149,11 @@
 		F2CD3150197FE43000873283 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F2A6EEF019811CC500179341 /* libGoogleAnalyticsServices.a */,
+				F2A6EEEE19811C1600179341 /* libz.dylib */,
+				F2A6EEEC19811C0900179341 /* SystemConfiguration.framework */,
+				F2A6EEEA19811BEF00179341 /* AdSupport.framework */,
+				F2A6EEE819811BCF00179341 /* CoreData.framework */,
 				F2CD3151197FE43000873283 /* Foundation.framework */,
 				F2CD3153197FE43000873283 /* CoreGraphics.framework */,
 				F2CD3155197FE43000873283 /* UIKit.framework */,
@@ -128,6 +175,7 @@
 				F2CD3166197FE43000873283 /* ViewController.h */,
 				F2CD3167197FE43000873283 /* ViewController.m */,
 				F2CD3169197FE43000873283 /* Images.xcassets */,
+				F2A6EEDD19811B4700179341 /* GoogleAnalytics */,
 				F2CD3158197FE43000873283 /* Supporting Files */,
 			);
 			path = TumTracker;
@@ -391,6 +439,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TumTracker/TumTracker-Prefix.pch";
 				INFOPLIST_FILE = "TumTracker/TumTracker-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,6 +456,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TumTracker/TumTracker-Prefix.pch";
 				INFOPLIST_FILE = "TumTracker/TumTracker-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -468,6 +524,7 @@
 				F2CD3182197FE43000873283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2CD3183197FE43000873283 /* Build configuration list for PBXNativeTarget "TumTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +533,7 @@
 				F2CD3185197FE43000873283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
