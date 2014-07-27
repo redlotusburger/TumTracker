@@ -38,11 +38,25 @@
 - (IBAction)trackIt:(id)sender {
     NSIndexPath *currentRow = [self.tableView indexPathForSelectedRow];
     NSString *currentFood = [self.foodList objectAtIndex:[currentRow row]];
+    NSNumber *foodvalue = [NSNumber numberWithInt:1];
+    
+    // May return nil if a tracker has not already been initialized with a property
+    // ID.
+    
     
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
     
+    
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"Food"     // Event category (required)
+                                                          action:(currentFood)  // Event action (required)
+                                                           label:@"play"          // Event label
+                                                           value:(foodvalue)] build]];    // Event value
+    
+    
+    
      NSLog(@"Track %@ with tracker %@", currentFood, tracker);
 }
+
 
 
 #pragma mark - Table view data source
