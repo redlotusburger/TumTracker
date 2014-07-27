@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FoodTableViewCell.h"
 #import "GAI.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface FoodTableViewController : GAITrackedViewController <UITableViewDataSource, UITableViewDelegate>
 
