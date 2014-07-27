@@ -23,7 +23,7 @@
     [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
     
     // Initialize tracker. Replace with your tracking ID.
-    [[GAI sharedInstance] trackerWithTrackingId:@"UA-52707782"];
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-52707782-1"];
         
     // Override point for customization after application launch.
     return YES;
